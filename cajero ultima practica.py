@@ -122,23 +122,20 @@ class Cajero:
         return None
 
 
-# Ejemplo de uso:
 
-# Crear un banco
 mi_banco = Banco("Mi Banco")
 
-# Crear clientes y cuentas
+
 cliente_JoseArmando = Cliente(nombre="JoseArmando", direccion="Calle durte mao", numero_cuenta=Cuenta(numero_cuenta="123456", saldo=1000, limite_credito=500, tipo_cuenta="Corriente"))
 cliente_maria = Cliente(nombre="Maria", direccion="Avenida 456", numero_cuenta=Cuenta(numero_cuenta="789012", saldo=1500, limite_credito=1000, tipo_cuenta="Ahorro"))
 
-# Agregar clientes al banco
 mi_banco.agregar_cliente(cliente_JoseArmando)
 mi_banco.agregar_cliente(cliente_maria)
 
-# Crear un cajero
+
 cajero_automatico = Cajero(banco=mi_banco, nombre="Cajero1", codigo="1234")
 
-# Ejecutar el cajero
+
 cajero_automatico.ejecutar()
 1
 
